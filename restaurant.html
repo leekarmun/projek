@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Taste Cafe</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Solway&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- animation links -->
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animation links -->
+
+</head>
+<body>
+    <div class="bg"></div>
+    <a id="backtotop"><i class="fa fa-chevron-up"></i></a>
+    <script type="text/javascript" src="jquery.backtotop.js"></script>
+    
+    <header>
+     
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+    
+            <img src="dessert1.jpg" class="logo"width="750" height="180">
+             
+            <nav class="navbar">
+               <ul>
+                <li><a href="#Home">Home</a><i class="fa fa-home"></i></li>
+                <li><a href="#About Us">About Us</a><i class="fa fa-camera"></i></li>
+                <li><a href="#Category">Category</a><i class="fa fa-lightbulb"></i></li>
+                <li>
+                  <a href="Ya.html">Menu <i class="fas fa-caret-down"></i></a>
+     
+                  <div class="dropdown">
+                    <ul>
+                     <li><a href="Ya.html#Crazyicecream">Crazy Ice Cream</a></li>
+                     <li><a href="Ya.html#Deliciouscake">Delicious Cake</a></li>
+                     <li><a href="Ya.html#Freshbread">Fresh Bread</a></li>
+                     <li><a href="Ya.html#Mouth-wateringdrinks">Mouth-watering drinks</a></li>
+                    </ul>
+                   </div>
+                </li>
+                <li><a href="#Review">Review</a><i class="fa fa-comment"></i></li>
+                <li><a href="Login.html">Login</a><i class="fa fa-user"></i></li>
+               </ul>        
+            </nav>
+     
+            <div class="icons">
+                <i class="fas fa-search" id="search-icon"></i>
+            </div>
+
+            <form action="https://www.google.com/search" id="search-form">
+                <input type="search" placeholder="search here..." name="" id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+                <i class="fas fa-times" id="close"></i>
+              </form>
+            </header>
+        
+
+    <section class="#Home" id="#Home">
+        <div id="Home" class="welcome">
+            <div class="animated-text">
+               <div class="line">SWEET</div>
+               <div class="line">TASTE</div>
+               <div class="line">CAFE</div>
+               <div class="line"><span>&#10084;</span></div>
+            </div>
+          </div>  
+       </div>
+       <div class="content">
+        <div class="slider">
+           <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <input type="radio" name="radio-btn" id="radio5">
+
+              <div class="slide first">
+                <img src="cafe1.jpg" alt="Gambar cafe 1" width="500" height="350">
+              </div>
+              <div class="slide">
+                <img src="cafe2.jpg" alt="Gambar cafe 2"width="500" height="350">
+              </div>
+              <div class="slide">
+                <img src="cafe3.jpg" alt="Gambar cafe 3"width="500" height="350">
+              </div>
+              <div class="slide"> 
+                <img src="cafe4.jpg" alt="Gambar cafe 4"width="500" height="350">
+              </div>
+              <div class="slide">
+                <img src="cafe5.jpg" alt="Gambar cafe 5"width="500" height="350">
+              </div>
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div> 
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div> 
+                <div class="auto-btn5"></div>
+              </div>
+           </div>
+           <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+         </div>
+      </div>
+
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if(counter > 5){
+             counter = 1;
+          }
+        }, 6000);
+        </script>
+
+      
+    </section>
+    <section class="#About Us" id="About Us">
+
+
+        <div id="About Us" class="wow">
+                  <div class="image">
+                     <img src="background.jpg" alt="hello"width="500" height="350">
+                        <div class="writing">
+                          <h1>Best Cafe In Ipoh!</h1>
+                          <span> Delicious and Tasty Cake,Ice Cream,Bread and Drinks! </span>
+                          <p>Welcome to Sweet Taste Cafe! If you want to eat the most delicious cake and ice cream in Ipoh, what are you waiting for? Just come and try it now!See you!</p>
+                          <a href="Login.html" class="btn2">Login Now</a>
+                        </div>
+                  </div>
+        </div>
+
+        <div id="About Us" class="sexybody">
+    
+            <div class="box1">
+                 <img src="cef.jpg"width="400" height="350">
+                 <h2>CHEF CAFE - Mr Jack</h2>
+                 <p>With 25 years of experience to be a chef in a cafe located in Ipoh.</p>
+            </div>
+            <div class="box1">
+                 <img src="good.jpg"width="400" height="350">
+                 <h2>GOOD AND FRESH INGREDIENTS</h2>
+                 <p>Fresh mlik,eggs,sugar to make an ice cream. <span>&#9825;</span></p>
+            </div>
+            <div class="box1">
+                 <img src="ice.jpg"width="400" height="350">
+                 <h2>RICH OF BUSINESS EXPERIENCE</h2>
+                 <p>10 years of business experience, has received many praises.</p>
+            </div> 
+        </div>  
+        
+        <div id="About Us" class="haha">
+
+            <div class="icons6">
+                <img src="icon-1.jpg" alt=""width="250" height="150">
+                <div class="info">
+                    <h3>Free delivery</h3>
+                    <span>*All orders!!!</span>
+                    <p></p>
+                </div>
+            </div>
+        
+            <div class="icons6">
+                <img src="icon.jpg" alt=""width="250" height="150">
+                <div class="info">
+                    <h3>Affordable price</h3>
+                    <span>*Save money!!!</span>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="icons6">
+                <img src="icon-3.jpg" alt=""width="250" height="150">
+                <div class="info">
+                    <h3>Offer & promotions</h3>
+                    <span>*40% discount for any new buyer!!!</span>
+                    <p></p>
+                </div>
+            </div>
+
+            <div id="About Us" class="container">
+                <div class="picture">
+                   <img src="cafeaa.jpg" alt="">
+                   <div class="heading">
+                      <h1>ABOUT US</h1>
+                      <p>Hi,here is Sweet taste cafe ! Sweet taste cafe located in Ipoh,Perak. There are many desserts serve in this cafe such as delicious cake,crazy ice cream,fresh bread and also the mouth-watering drinks! We have a physical cafe located in Ipoh,but you can also have an order online. 
+                         All your orders are free delivery to your house! We often have an offer or promotion,please always follow the information from our cafe. Thank You !!!!<p>
+                   </div>
+                </div>
+        </div>
+
+    </section>
+
+    <section class="#Category" id="Category">
+    
+        <h1 class="j">Menu !</h1>
+    
+        <div class="ehh">
+    
+            <div class="box7">
+                <img src="crazy.jpg" alt=""width="250" height="150">
+                <h3>Crazy Ice Cream</h3>
+                <a href="Ya.html#Crazyicecream" class="btn7">view more</a>
+                <p></p>
+            </div>
+
+            <div class="box7">
+                <img src="cake.jpg" alt=""width="250" height="150">
+                <h3>Delicious cake</h3>
+                <a href="Ya.html#deliciouscake" class="btn7">view more</a>
+                <p></p>
+            </div>
+    
+            <div class="box7">
+                <img src="bread.jpg" alt=""width="250" height="150">
+                <h3>Fresh bread</h3>
+                <a href="Ya.html#freshbread" class="btn7">view more</a>
+                <p></p>
+            </div>
+    
+            <div class="box7">
+                <img src="drinks.jpg" alt=""width="250" height="150">
+                <h3>Mouth-watering drinks </h3>
+                <a href="Ya.html#Mouth-wateringdrinks" class="btn7">view more</a>
+                <p></p>
+            </div>
+    
+        </div>
+
+      </section>
+   
+      <section class="#Review" id="Review">
+      
+      <div class="bagos">
+           <div class="jiji">
+              <div class="l">Customer's <span>Review</span> </div>
+           </div>
+      
+        <div class="box-containeraa">
+          <div class="boxa">
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>This is the best dessert shop in ipoh!!!The environment is so good and every thing is nice.Thank you so much!!!</p>
+        <div class="user">
+            <img src="1.jpg" alt=""width="250" height="150">
+            <div class="user-info">
+                <h3>Louissss</h3>
+            </div>
+        </div>
+        <i class="fas fa-quote-right"></i>
+    </div>
+
+    <div class="boxa">
+      <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <p>I will share this restaurant to the ig and fb! The foods and drinks here are very delicious!! like it so much... </p>
+      <div class="user">
+          <img src="2.jpg" alt=""width="250" height="150">
+          <div class="user-info">
+              <h3>Ben Leee@123</h3>
+          </div>
+      </div>
+      <i class="fas fa-quote-right"></i>
+  </div>
+
+  <div class="boxa">
+    <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <p>i think its still ok.I will take my family to come in this restaurant...the servers there are very polite..tq!! </p>
+    <div class="user">
+        <img src="3.jpg" alt=""width="250" height="150">
+        <div class="user-info">
+            <h3>happy@wong89</h3>
+        </div>
+    </div>
+    <i class="fas fa-quote-right"></i>
+</div>
+</div>
+</div> 
+</section>
+<section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3> Sweet Taste Cafe <i class="fas-thin fa-sushi"></i> </h3>
+        <p>Thank you for support our cafe! You can share about our restaurant through any social media!</p>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+
+    <div class="box">
+      <h3>Contact Info</h3>
+      <a href="#" class="links"> <i class="fas fa-phone"></i> +6011-1731-5432</a>
+      <a href="#" class="links"> <i class="fas fa-clock"></i> 8:00am to 8.00pm </a>
+      <a href="#" class="links"> <i class="fas fa-envelope"></i> lee@gmail.com </a>
+      <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> 37, Jalan Sultan, Taman Indah Berseri, 31350, Ipoh, Perak </a>
+  </div>
+
+  <div class="box">
+    <h3>Newsletter</h3>
+    <p>Subscribe and follow for latest updates or promotion!</p>
+     <input type="email" name="email" class="email" placeholder="your email" required>
+    <button type="submit" class="btn1">Subscribe</button>
+    <img src="payment.jpg" class="payment-img" alt=""width="250" height="150">
+</div>
+
+</div>
+<div class="credit"> created by <span> mr. lee designer </span> | all rights reserved </div>
+
+</section>
+
+<script src="hehe.js"></script>
+<script src="play.js"></script>
+<script src="search.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+    
+        
+        
+        
+
+
+
+        
+    

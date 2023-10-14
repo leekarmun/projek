@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+   <title>Sweet Taste Cafe</title>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Solway&display=swap" rel="stylesheet"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  
+</head>
+<body>
+
+<div class="bg"></div>
+
+<a id="backtotop"><i class="fa fa-chevron-up"></i></a>
+
+<script type="text/javascript" src="jquery.backtotop.js"></script>
+
+<header>
+
+ <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+        <img src="dessert1.jpg" class="logo">
+         
+        <nav class="navbar">
+           <ul>
+            <li><a href="#Home">Home</a><i class="fa fa-home"></i></li>
+            <li><a href="#About Us">About Us</a><i class="fa fa-camera"></i></li>
+            <li><a href="#Category">Category</a><i class="fa fa-lightbulb"></i></li>
+            <li>
+              <a href="#Menu">Menu <i class="fas fa-caret-down"></i></a>
+ 
+                <div class="dropdown">
+                 <ul>
+                 <li><a href="Ya.html#Crazyicecream">Crazy Ice Cream</a></li>
+                 <li><a href="Ya.html#Deliciouscake">Delicious Cake</a></li>
+                 <li><a href="Ya.html#Freshbread">Fresh Bread</a></li>
+                 <li><a href="Ya.html#Mouth-wateringdrinks">Mouth-watering drinks</a></li>
+                 </ul>
+                </div>
+                </li>
+                <li><a href="#Review">Review</a><i class="fa fa-comment"></i></li>
+                <li><a href="Login.html">Login</a><i class="fa fa-user"></i></li>
+               </ul>        
+            </nav>
+
+            <div class="icons">
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class="fas fa-shopping-cart" id="cart-icon"></i>
+            
+            </div>
+        <form action="#" id="sabi">
+
+          <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                </div>
+          
+          <nav class="roo navbar-inverse bg-inverse fixed-top bg-faded">
+              <div class="rokkan">
+                  <div class="roki">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+                    <button class="clear-cart btn btn-danger">Clear Cart</button>
+                   </div>
+              </div>
+          </nav>
+            <div class="modal-body">
+                  <table class="show-cart table"></table>
+                  <div class="kl">
+                  <div>Total price: RM<span class="total-cart"></span></div>
+                  </div>
+                </div>
+                <a href="Order Now.html" class="btn-bty">Order Now</a>
+                <i class="fas fa-times" id="cart-close"></i>
+              </div>
+            </div>
+</div> 
+</div>
+</form>
+
+      <form action="https://www.google.com/search" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+      </form>
+
+</header>
+
+<section class="#Menu" id="Menu">
+
+   <section class="#Crazyicecream" id="Crazyicecream">
+     <div class="shop-container">
+        <div class="title"> MENU </div>
+        <div class="sushi"> Crazy Ice Cream </div>
+     </div>
+
+     <div class="menu-container">
+
+      <div class="menu">
+        <div class="c">
+            <img src="gelato.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Gelato Ice Cream</h3>
+            <p>Tasty!!</p>
+            <a href="#" data-name="Gelato" data-price="2.20" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 2.20</span>
+        </div>
+    </div>
+
+    <div class="menu">
+      <div class="c">
+          <img src="kulfi.jpg" alt="">
+      </div>
+      <div class="wuyu">
+          <h3>Kulfi Ice Cream</h3>
+          <p>Delicious!!</p>
+          <a href="#" data-name="Kulfi" data-price="3.50" class="add-to-cart btn btn-primary">Add to cart</a>
+          <span class="price">RM 3.50</span>
+      </div>
+  </div>
+  <div class="menu">
+    <div class="c">
+        <img src="watermelonsherbet.jpg" alt="">
+    </div>
+    <div class="wuyu">
+        <h3>Watermelon Sherbet</h3>
+        <p>You must try it!!</p>
+        <a href="#" data-name="Watermelon Sherbet" data-price="4.50" class="add-to-cart btn btn-primary">Add to cart</a>
+        <span class="price">RM 4.50</span>
+    </div>
+</div>
+
+<div class="menu">
+  <div class="c">
+      <img src="chocolate banana ice cream.jpg" alt="">
+  </div>
+  <div class="wuyu">
+      <h3>Chocolate banana ice cream</h3>
+      <p>The lowest price in Ipoh!!</p>
+      <a href="#" data-name="chocolate banana ice cream" data-price="4.80" class="add-to-cart btn btn-primary">Add to cart</a>
+      <span class="price">RM 4.80</span>
+  </div>
+</div>
+
+<div class="menu">
+  <div class="c">
+      <img src="Frozen Yogurt.jpg" alt="">
+  </div>
+  <div class="wuyu">
+      <h3>Frozen Yogurt</h3>
+      <p>Flavour:Strawberry , Chocolate , Vanilla , Mango</p>
+      <a href="#" data-name="Frozen Yogurt" data-price="4.90" class="add-to-cart btn btn-primary">Add to cart</a>
+      <span class="price">RM 4.90</span>
+  </div>
+</div>
+
+<div class="menu">
+  <div class="c">
+      <img src="Soft Serve.jpg" alt="">
+  </div>
+  <div class="wuyu">
+      <h3>Soft Serve</h3>
+      <p>Flavour:Strawberry , Chocolate , Vanilla , Mango</p>
+      <a href="#" data-name="Soft Serve" data-price="3.80" class="add-to-cart btn btn-primary">Add to cart</a>
+      <span class="price">RM 3.80</span>
+  </div>
+</div>
+
+<div class="menu">
+  <div class="c">
+      <img src="bb.jpg" alt="">
+  </div>
+  <div class="wuyu">
+      <h3>Ice cream bowl banana boat </h3>
+      <p>Wow!!</p>
+      <a href="#" data-name="Ice cream bowl banana boat" data-price="8.80" class="add-to-cart btn btn-primary">Add to cart</a>
+      <span class="price">RM 8.80</span>
+  </div>
+</div>
+
+<div class="menu">
+  <div class="c">
+      <img src="Rolled Ice Cream.jpg" alt="">
+  </div>
+  <div class="wuyu">
+      <h3>Rolled Ice Cream </h3>
+      <p>Flavour:Strawberry , Chocolate , Vanilla , Mango</p>
+      <a href="#" data-name="Rolled Ice Cream" data-price="6.80" class="add-to-cart btn btn-primary">Add to cart</a>
+      <span class="price">RM 6.80</span>
+  </div>
+</div>
+</section>
+
+<section class="#Deliciouscake" id="Deliciouscake">
+  <div class="shop-container">
+     <div class="title"> Delicious Cake </div>
+  </div>
+
+  <div class="menu-container">
+
+     <div class="menu">
+         <div class="c">
+             <img src="Chocolate Cake.jpg" alt="">
+         </div>
+         <div class="wuyu">
+             <h3>Chocolate Cake</h3>
+             <p>*1 piece*</p>
+             <a href="#" data-name="Chocolate Cake" data-price="6.70" class="add-to-cart btn btn-primary">Add to cart</a>
+             <span class="price">RM 6.70</span>
+         </div>
+     </div>
+
+     <div class="menu">
+      <div class="c">
+          <img src="Carrot Cake.jpg" alt="">
+      </div>
+      <div class="wuyu">
+          <h3>Carrot Cake</h3>
+          <p>*1 piece*</p>
+          <a href="#" data-name="Carrot Cake" data-price="7.70" class="add-to-cart btn btn-primary">Add to cart</a>
+          <span class="price">RM 7.70</span>
+      </div>
+  </div>
+
+  <div class="menu">
+    <div class="c">
+        <img src="Red Velvet Cake.jpg" alt="">
+    </div>
+    <div class="wuyu">
+        <h3>Red Velvet Cake</h3>
+        <p>*1 piece*</p>
+        <a href="#" data-name="Red Velvet Cake" data-price="6.90" class="add-to-cart btn btn-primary">Add to cart</a>
+        <span class="price">RM 6.90</span>
+    </div>
+</div>
+<div class="menu">
+  <div class="c">
+      <img src="Pound Cake.jpg" alt="">
+  </div>
+  <div class="wuyu">
+      <h3>Pound Cake</h3>
+      <p>1 set *8 pieces*</p>
+      <a href="#" data-name="Pound Cake" data-price="10.90" class="add-to-cart btn btn-primary">Add to cart</a>
+      <span class="price">RM 10.90</span>
+  </div>
+</div>
+<div class="menu">
+  <div class="c">
+      <img src="Strawberry Shortcake.jpg" alt="">
+  </div>
+  <div class="wuyu">
+      <h3>Strawberry Shortcake</h3>
+      <p>1 plate</p>
+      <a href="#" data-name="Strawberry Shortcake" data-price="7.90" class="add-to-cart btn btn-primary">Add to cart</a>
+      <span class="price">RM 7.90</span>
+  </div>
+</div>
+
+<div class="menu">
+  <div class="c">
+      <img src="Coffee Cake.jpg" alt="">
+  </div>
+  <div class="wuyu">
+      <h3>Coffee Cake</h3>
+      <p>*1 piece*</p>
+      <a href="#" data-name="Coffee Cake" data-price="8.90" class="add-to-cart btn btn-primary">Add to cart</a>
+      <span class="price">RM 8.90</span>
+  </div>
+</div>
+<div class="menu">
+  <div class="c">
+      <img src="Cheesecake.jpg" alt="">
+  </div>
+  <div class="wuyu">
+      <h3>Cheesecake</h3>
+      <p>*1 piece*</p>
+      <a href="#" data-name="Cheesecake" data-price="7.90" class="add-to-cart btn btn-primary">Add to cart</a>
+      <span class="price">RM 7.90</span>
+  </div>
+</div>
+<div class="menu">
+  <div class="c">
+      <img src="bl.jpg" alt="">
+  </div>
+  <div class="wuyu">
+      <h3>Black Forest Cake</h3>
+      <p>*1 piece*</p>
+      <a href="#" data-name="Black Forest Cake" data-price="9.90" class="add-to-cart btn btn-primary">Add to cart</a>
+      <span class="price">RM 9.90</span>
+  </div>
+</div>
+</section>
+<section class="#Freshbread" id="Freshbread">
+  <div class="shop-container">
+     <div class="title">Fresh Bread </div>
+  </div>
+
+  <div class="menu-container">
+
+    <div class="menu">
+      <div class="c">
+          <img src="Wholewheat bread.jpg" alt="">
+      </div>
+      <div class="wuyu">
+          <h3>Wholewheat Bread</h3>
+          <p>1 set *8 pieces*</p>
+          <a href="#" data-name="Wholewheat bread" data-price="6.90" class="add-to-cart btn btn-primary">Add to cart</a>
+          <span class="price">RM 6.90</span>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="c">
+          <img src="Rye bread.jpg" alt="">
+      </div>
+      <div class="wuyu">
+          <h3>Rye bread</h3>
+          <p>1 set *8 pieces* Free butter!!</p>
+          <a href="#" data-name="Rye bread" data-price="9.90" class="add-to-cart btn btn-primary">Add to cart</a>
+          <span class="price">RM 9.90</span>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="c">
+          <img src="Sourdough bread.jpg" alt="">
+      </div>
+      <div class="wuyu">
+          <h3>Sourdough bread</h3>
+          <p>*1 piece*</p>
+          <a href="#" data-name="Sourdough bread" data-price="3.90" class="add-to-cart btn btn-primary">Add to cart</a>
+          <span class="price">RM 3.90</span>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="c">
+          <img src="Multigrain bread.jpg" alt="">
+      </div>
+      <div class="wuyu">
+          <h3>Multigrain bread</h3>
+          <p>1 set *6 pieces* Free butter!!</p>
+          <a href="#" data-name="Multigrain bread" data-price="9.90" class="add-to-cart btn btn-primary">Add to cart</a>
+          <span class="price">RM 9.90</span>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="c">
+          <img src="Baguette sandwich.jpg" alt="">
+      </div>
+      <div class="wuyu">
+          <h3>Baguette sandwich</h3>
+          <p>The most delicious sandwich!!</p>
+          <a href="#" data-name="Baguette sandwich" data-price="8.90" class="add-to-cart btn btn-primary">Add to cart</a>
+          <span class="price">RM 8.90</span>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="c">
+          <img src="Ciabatta sandwich.jpg" alt="">
+      </div>
+      <div class="wuyu">
+          <h3>Ciabatta sandwich</h3>
+          <p>It must made you mouth-watering!!</p>
+          <a href="#" data-name="Ciabatta sandwich" data-price="7.90" class="add-to-cart btn btn-primary">Add to cart</a>
+          <span class="price">RM 7.90</span>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="c">
+          <img src="Pumpernickel bread.jpg" alt="">
+      </div>
+      <div class="wuyu">
+          <h3>Pumpernickel bread with egg</h3>
+          <p>Nyum Nyum Nyum!!</p>
+          <a href="#" data-name="Pumpernickel bread" data-price="7.70" class="add-to-cart btn btn-primary">Add to cart</a>
+          <span class="price">RM 7.70</span>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="c">
+          <img src="egg mayo sandwich.jpg" alt="">
+      </div>
+      <div class="wuyu">
+          <h3>Egg mayo sandwich</h3>
+          <p>Satisfying!!</p>
+          <a href="#" data-name="egg mayo sandwich" data-price="6.90" class="add-to-cart btn btn-primary">Add to cart</a>
+          <span class="price">RM 6.90</span>
+      </div>
+    </div>
+  </section>
+  <section class="#Mouth-wateringdrinks" id="Mouth-wateringdrinks">
+    <div class="shop-container">
+       <div class="title">Mouth-watering Drinks </div>
+    </div>
+  
+    <div class="menu-container">
+      <div class="menu">
+        <div class="c">
+            <img src="ice green tea.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Ice Green Tea</h3>
+            <p>*1 cup*</p>
+            <a href="#" data-name="ice green tea" data-price="4.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 4.90</span>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="c">
+            <img src="ice lemon tea.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Ice Lemon Tea</h3>
+            <p>*1 cup*</p>
+            <a href="#" data-name="ice lemon tea" data-price="3.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 3.90</span>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="c">
+            <img src="milo.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Milo</h3>
+            <p>*1 cup* Hot/Cold</p>
+            <a href="#" data-name="Milo" data-price="2.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 2.90</span>
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="c">
+            <img src="Mocha.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Mocha Coffee</h3>
+            <p>*1 cup* Hot/Cold</p>
+            <a href="#" data-name="Mocha" data-price="3.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 3.90</span>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="c">
+            <img src="latte.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Latte</h3>
+            <p>*1 cup* Hot/Cold</p>
+            <a href="#" data-name="Latte" data-price="2.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 2.90</span>
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="c">
+            <img src="blackcoffee.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Black Coffee</h3>
+            <p>*1 cup* Hot/Cold</p>
+            <a href="#" data-name="blackcoffee" data-price="3.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 3.90</span>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="c">
+            <img src="cappuccino.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Cappuccino</h3>
+            <p>*1 cup* Hot/Cold</p>
+            <a href="#" data-name="cappuccino" data-price="3.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 3.90</span>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="c">
+            <img src="coke.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Coke</h3>
+            <p>*1 bottle* </p>
+            <a href="#" data-name="Coke" data-price="2.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 2.90</span>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="c">
+            <img src="100.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>100 Plus</h3>
+            <p>*1 bottle* </p>
+            <a href="#" data-name="100" data-price="2.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 2.90</span>
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="c">
+            <img src="sarsi.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Sarsi</h3>
+            <p>*1 bottle* </p>
+            <a href="#" data-name="Sarsi" data-price="2.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 2.90</span>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="c">
+            <img src="Ice lemon syrup.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>Ice lemon syrup</h3>
+            <p>*1 cup* </p>
+            <a href="#" data-name="Ice lemon syrup" data-price="3.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 3.90</span>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="c">
+            <img src="fn.jpg" alt="">
+        </div>
+        <div class="wuyu">
+            <h3>F&N</h3>
+            <p>*1 bottle* Flavour:grape,orange,
+              apple,strawberry</p>
+            <a href="#" data-name="fn" data-price="2.90" class="add-to-cart btn btn-primary">Add to cart</a>
+            <span class="price">RM 2.90</span>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+
+      <div class="box-container">
+  
+        <div class="box">
+          <h3> Sweet Taste Cafe <i class="fas-thin fa-sushi"></i> </h3>
+          <p>Thank you for support our cafe! You can share about our restaurant through any social media!</p>
+          <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+          </div>
+      </div>
+  
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#" class="links"> <i class="fas fa-phone"></i> +6011-1731-5432</a>
+        <a href="#" class="links"> <i class="fas fa-clock"></i> 8:00am to 8.00pm </a>
+        <a href="#" class="links"> <i class="fas fa-envelope"></i> lee@gmail.com </a>
+        <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> 37, Jalan Sultan, Taman Indah Berseri, 31350, Ipoh, Perak </a>
+    </div>
+  
+    <div class="box">
+      <h3>Newsletter</h3>
+      <p>Subscribe and follow for latest updates or promotion!</p>
+       <input type="email" name="email" class="email" placeholder="your email" required>
+      <button type="submit" class="btn1">Subscribe</button>
+      <img src="payment.jpg" class="payment-img" alt=""width="250" height="150">
+  </div>
+  
+  </div>
+  <div class="credit"> created by <span> mr. lee designer </span> | all rights reserved </div>
+  
+  </section>
+  
+  <script src="hehe.js"></script>
+  <script src="play.js"></script>
+  <script src="search.js"></script>
+  <script src="script.js"></script>
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
